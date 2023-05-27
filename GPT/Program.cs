@@ -1,3 +1,6 @@
+using MarcosWebApiProject.ApplicationService.ADProduct;
+using MarcosWebApiProject.ApplicationService.Interfaces;
+using MarcosWebApiProject.Infrastructure.Network;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -42,9 +45,14 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Services for GPT
+builder.Services.AddScoped<IADProductService, ADProductService>();
+builder.Services.AddScoped<IBotAPIService, BotAPIService>();
 
 var app = builder.Build();
 

@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\GPTRepo\GptWebApi\MarcosWebApiProject.ApplicationService\GPT.ApplicationService.csproj" />
+    <ProjectReference Include="..\..\..\GPTRepo\GptWebApi\MarcosWebApiProject.Infrastructure\GPT.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

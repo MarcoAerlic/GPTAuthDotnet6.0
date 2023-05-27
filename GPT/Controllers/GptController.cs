@@ -7,7 +7,7 @@ using WebApplication1.Model;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
+   // [Authorize(Roles = UserRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
     public class GptController : ControllerBase
@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("ExtractDataGptTurbo")]
-        [Authorize]
+      //  [Authorize]
         public async Task<ActionResult<ADProductResponseModel>> GenerateADGPTTurbo(List<GPTMessage> aDGenerateRequestModel)
         {
             try
@@ -39,7 +39,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("ExtractDataGpt4")]
-        [Authorize]
+      //  [Authorize]
         public async Task<ActionResult<ADProductResponseModel>> ExtractADDataGpt4(List<GPTMessage> aDGenerateRequestModel)
         {
             try
@@ -58,7 +58,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("ExtractDataDavinci")]
-        [Authorize]
+    //    [Authorize]
         public async Task<ActionResult<ADProductResponseModel>> GenerateADDavinci(CustomerRequestModel aDGenerateRequestModel)
         {
             try

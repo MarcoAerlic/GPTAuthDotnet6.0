@@ -9,6 +9,7 @@
       "GPT/1.0.0": {
         "dependencies": {
           "GPT.ApplicationService": "1.0.0",
+          "GPT.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.7",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
@@ -603,6 +604,15 @@
         "runtime": {
           "GPT.ApplicationService.dll": {}
         }
+      },
+      "GPT.Infrastructure/1.0.0": {
+        "dependencies": {
+          "GPT.ApplicationService": "1.0.0",
+          "OpenAI": "1.7.2"
+        },
+        "runtime": {
+          "GPT.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1031,6 +1041,11 @@
       "sha512": ""
     },
     "GPT.ApplicationService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GPT.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
