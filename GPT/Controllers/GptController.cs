@@ -7,7 +7,7 @@ using WebApplication1.Model;
 
 namespace WebApplication1.Controllers
 {
-   // [Authorize(Roles = UserRoles.Admin)]
+    [Authorize(Roles = UserRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
     public class GptController : ControllerBase
@@ -20,8 +20,9 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("ExtractDataGptTurbo")]
-      //  [Authorize]
-        public async Task<ActionResult<ADProductResponseModel>> GenerateADGPTTurbo(List<GPTMessage> aDGenerateRequestModel)
+        [Authorize]
+      //  [AuthorizeByApiKey]
+        public async Task<ActionResult<ADProductResponseModel>> GenerateADGPTTurbo([FromBody] List<GPTMessage> aDGenerateRequestModel)
         {
             try
             {
@@ -39,8 +40,9 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("ExtractDataGpt4")]
-      //  [Authorize]
-        public async Task<ActionResult<ADProductResponseModel>> ExtractADDataGpt4(List<GPTMessage> aDGenerateRequestModel)
+        [Authorize]
+        //[AuthorizeByApiKey]
+        public async Task<ActionResult<ADProductResponseModel>> ExtractADDataGpt4([FromBody] List<GPTMessage> aDGenerateRequestModel)
         {
             try
             {
@@ -58,8 +60,9 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("ExtractDataDavinci")]
-    //    [Authorize]
-        public async Task<ActionResult<ADProductResponseModel>> GenerateADDavinci(CustomerRequestModel aDGenerateRequestModel)
+        [Authorize]
+       // [AuthorizeByApiKey]
+        public async Task<ActionResult<ADProductResponseModel>> GenerateADDavinci([FromBody] CustomerRequestModel aDGenerateRequestModel)
         {
             try
             {
