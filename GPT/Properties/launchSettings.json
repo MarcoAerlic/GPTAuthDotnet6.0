@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "WebApplication1": {
+    "GPT": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
