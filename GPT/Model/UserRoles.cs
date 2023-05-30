@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Model
+﻿namespace GPT.Model
 {
     public static class UserRoles
     {

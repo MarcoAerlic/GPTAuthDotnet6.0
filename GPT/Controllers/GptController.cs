@@ -3,9 +3,9 @@ using MarcosWebApiProject.ApplicationService.ADProduct;
 using MarcosWebApiProject.ApplicationService.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Model;
+using GPT.Model;
 
-namespace WebApplication1.Controllers
+namespace GPT.Controllers
 {
     [Authorize(Roles = UserRoles.Admin)]
     [Route("api/[controller]")]

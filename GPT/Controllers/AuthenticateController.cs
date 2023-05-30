@@ -4,9 +4,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using WebApplication1.Model;
+using GPT.Model;
 
-namespace WebApplication1.Controllers
+namespace GPT.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

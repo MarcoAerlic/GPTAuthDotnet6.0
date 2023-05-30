@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApplication1.Model
+namespace GPT.Model
 {
     public class RegisterModel
     {
