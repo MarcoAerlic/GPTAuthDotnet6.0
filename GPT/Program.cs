@@ -1,6 +1,6 @@
-using MarcosWebApiProject.ApplicationService.ADProduct;
-using MarcosWebApiProject.ApplicationService.Interfaces;
-using MarcosWebApiProject.Infrastructure.Network;
+using GPT.ApplicationService.ADProduct;
+using GPT.ApplicationService.Interfaces;
+using GPT.Infrastructure.Network;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
