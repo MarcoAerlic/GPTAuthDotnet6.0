@@ -1,6 +1,6 @@
 ﻿using Core.Model.CoreEntity;
-using MarcosWebApiProject.ApplicationService.ADProduct;
-using MarcosWebApiProject.ApplicationService.Interfaces;
+using GPT.ApplicationService.ADProduct;
+using GPT.ApplicationService.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using GPT.Model;
